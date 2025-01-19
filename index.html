@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プランニングポーカー</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>プランニングポーカー</h1>
+        <div class="cards">
+            <button class="card" onclick="selectCard(1)">1</button>
+            <button class="card" onclick="selectCard(2)">2</button>
+            <button class="card" onclick="selectCard(3)">3</button>
+            <button class="card" onclick="selectCard(5)">5</button>
+            <button class="card" onclick="selectCard(8)">8</button>
+            <button class="card" onclick="selectCard(13)">13</button>
+            <button class="card" onclick="selectCard(20)">20</button>
+            <button class="card" onclick="selectCard(40)">40</button>
+            <button class="card" onclick="selectCard(100)">100</button>
+        </div>
+        <div id="selected-card">
+            <p>選択したカード: <span id="card-value">なし</span></p>
+        </div>
+        <div id="other-selections">
+            <h2>他のメンバーの選択</h2>
+            <ul id="selections-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
